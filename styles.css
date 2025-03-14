@@ -1,7 +1,12 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	font-family: Arial, sans-serif;
     background-color: #cccccc;
+}
+
+.header-container {
+    background-color: #120323;
 }

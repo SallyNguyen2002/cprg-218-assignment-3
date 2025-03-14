@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -7,6 +8,39 @@ body {
     background-color: #cccccc;
 }
 
-.header-container {
+header {
     background-color: #120323;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #97bf04;
+    gap: 1rem;
+}
+
+nav, footer {
+    background-color: #d9043d;
+    width: 100%;
+    margin:0;
+    padding: 1rem 0;
+    display:flex;
+}
+
+nav li{
+    list-style-type:none;
+    display:inline;
+    margin-right:1.5rem;
+}
+
+nav li:last-of-type{
+    margin-right:0;
+}
+
+nav li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav li a:hover{
+    color:#120323;
+    text-decoration:underline;
 }

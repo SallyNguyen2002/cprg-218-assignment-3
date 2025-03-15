@@ -21,7 +21,7 @@ nav, footer {
     width: 100%;
     margin:0;
     padding: 1rem 0;
-    display:flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -78,4 +78,26 @@ figcaption{
 
 footer{
     color: white;
+}
+
+@media screen and (max-width:1000px){
+    #gallery-container{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns:
+        1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    nav{
+        grid-template-columns: 1fr;
+    }
+    #gallery-container{
+        margin: 1rem;
+        grid-template-columns:
+        1fr;
+        gap: 3rem;
+    }
 }

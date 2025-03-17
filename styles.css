@@ -18,7 +18,7 @@ header {
     text-align: center;
 }
 
-/*----------NAVIGATION-----------*/
+/*----------NAVIGATION AND FOOTER-----------*/
 
 nav, footer {
     background-color: #d9043d;
@@ -38,7 +38,7 @@ nav ul {
 
 nav li{
     list-style-type: none;
-    margin: 0 1rem;
+    margin: 0 1rem;;
 }
 
 nav li a{
@@ -51,11 +51,15 @@ nav li a:hover{
     text-decoration:underline;
 }
 
+footer{
+    color: white;
+}
+
 /*----------MAIN-----------*/
 
 h2{
     text-align: center;
-    margin: 1rem;
+    margin: 1rem;;
 }
 
 #gallery-container{
@@ -69,7 +73,6 @@ h2{
 figure {
     background-color: white;
     padding: 1rem;
-    width: 100%;
 }
 
 figure img{
@@ -85,10 +88,6 @@ figcaption{
     display: grid;
     row-gap: 1rem;
     padding: 1rem 0;
-}
-
-footer{
-    color: white;
 }
 
 figure:last-of-type{
@@ -118,6 +117,7 @@ figure:last-of-type{
     }
     nav li {
         width: 100%;
+        margin: auto;
     }
     nav li a{
         display: block;

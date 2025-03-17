@@ -84,6 +84,12 @@ footer{
     color: white;
 }
 
+figure:last-of-type{
+    grid-column: span 2;
+}
+
+/*----------RESPONSIVE LAYOUT-----------*/
+
 @media screen and (max-width:1000px){
     #gallery-container{
         margin: 1rem;
@@ -123,6 +129,8 @@ footer{
         margin: 1rem;
         grid-template-columns:
         1fr;
-        gap: 3rem;
+    }
+    #gallery-container figure:last-of-type {
+        grid-column: auto;
     }
 }

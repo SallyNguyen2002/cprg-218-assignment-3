@@ -8,21 +8,26 @@ body {
     background-color: #cccccc;
 }
 
+/*----------HEADER-----------*/
+
 header {
     background-color: #120323;
     display: grid;
-    justify-items: center;
     color: #97bf04;
     gap: 1rem;
+    text-align: center;
 }
+
+/*----------NAVIGATION-----------*/
 
 nav, footer {
     background-color: #d9043d;
     width: 100%;
-    margin:0;
+    margin: auto;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 nav ul {
@@ -33,8 +38,7 @@ nav ul {
 
 nav li{
     list-style-type: none;
-    display: inline-block;
-    margin-right: 1.5rem;
+    margin: 0 1rem;
 }
 
 nav li a{
@@ -47,9 +51,11 @@ nav li a:hover{
     text-decoration:underline;
 }
 
+/*----------MAIN-----------*/
+
 h2{
     text-align: center;
-    margin: 1rem;;
+    margin: 1rem;
 }
 
 #gallery-container{
@@ -72,6 +78,7 @@ figure img{
     border-bottom: solid 10px #97bf04;
     max-width: 650px;   
     display: block;
+    margin: auto;
 }
 
 figcaption{
@@ -92,11 +99,8 @@ figure:last-of-type{
 
 @media screen and (max-width:1000px){
     #gallery-container{
-        margin: 1rem;
-        display: grid;
         grid-template-columns:
         1fr 1fr;
-        gap: 3rem;
     }
 }
 
@@ -126,7 +130,6 @@ figure:last-of-type{
         width: 100%;
     }
     #gallery-container{
-        margin: 1rem;
         grid-template-columns:
         1fr;
     }

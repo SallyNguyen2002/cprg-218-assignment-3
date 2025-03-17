@@ -36,11 +36,6 @@ nav ul {
     margin: 0;
 }
 
-nav li{
-    list-style-type: none;
-    margin: 0 1rem;
-}
-
 nav li a{
     color:white;
     text-decoration:none;
@@ -95,6 +90,13 @@ figure:last-of-type{
 }
 
 /*----------RESPONSIVE LAYOUT-----------*/
+
+@media screen and (min-width:769px){
+    nav li{
+        list-style-type: none;
+        margin: 0 1rem;
+    }
+}
 
 @media screen and (max-width:1000px){
     #gallery-container{
